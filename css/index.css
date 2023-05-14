@@ -1,0 +1,88 @@
+body {
+  background-color: #f0f0f0;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.main {
+  padding-bottom: 1.33333333rem;
+}
+.main .banner img {
+  height: 5.33333333rem;
+  width: 10rem;
+}
+.main .title {
+  height: 1.06666667rem;
+  line-height: 1.06666667rem;
+  padding-left: 0.4rem;
+}
+.main .title h4 {
+  font-size: 0.37333333rem;
+  color: #3c3c3c;
+}
+.main .item {
+  margin-bottom: 0.26666667rem;
+}
+.main .item .pic {
+  position: relative;
+}
+.main .item .pic img {
+  width: 10rem;
+  height: 5.33333333rem;
+}
+.main .item .pic span {
+  position: absolute;
+  left: -0.66666667rem;
+  top: -0.66666667rem;
+  font-size: 1.33333333rem;
+  margin-left: 5rem;
+  margin-top: 2.66666667rem;
+  color: #fff;
+  opacity: 0.8;
+}
+.main .item .txt {
+  padding-left: 0.4rem;
+  padding-top: 0.26666667rem;
+  padding-bottom: 0.26666667rem;
+  background-color: #fff;
+}
+.main .item .txt h4 {
+  color: #3c3c3c;
+  font-size: 0.4rem;
+}
+.main .item .txt h5 {
+  margin-top: 0.26666667rem;
+  font-size: 0.29333333rem;
+  color: #b4b4b4;
+}
+.main .item .txt h5 i {
+  color: red;
+}
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 1.33333333rem;
+  width: 100%;
+  background-color: #feca49;
+  display: flex;
+  justify-content: space-around;
+}
+footer a {
+  text-align: center;
+  font-size: 0.4rem;
+  color: #d78b09;
+}
+footer a .iconfont {
+  font-size: 0.64rem;
+}
+footer a.current {
+  color: #fff;
+}

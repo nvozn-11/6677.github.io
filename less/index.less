@@ -1,0 +1,110 @@
+// out: ../css/
+
+// 相当于宏定义
+@rootSize: 37.5rem;
+
+body {
+    background-color: #f0f0f0;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+
+// 主题内容
+.main {
+    padding-bottom: ( 50 / @rootSize );
+
+    //banner
+    .banner img {
+        height: ( 200 / @rootSize );
+        width: ( 375 / @rootSize );
+         
+    }
+
+    //活动标题
+    .title {
+        height: ( 40 / @rootSize);
+        line-height: ( 40 / @rootSize);
+        padding-left: ( 15 / @rootSize);
+        h4 {
+            font-size: ( 14 / @rootSize);
+            color: #3c3c3c;
+        }
+    }
+
+    //活动
+    .item {
+        margin-bottom: ( 10 / @rootSize );
+
+        .pic {
+            position: relative;
+        }
+        .pic img {
+            width: ( 375 / @rootSize );
+            height: ( 200 / @rootSize );
+        }
+        .pic span {
+            position: absolute;
+            left: -( 25 / @rootSize );
+            top: -( 25 / @rootSize );
+            font-size: ( 50 / @rootSize );
+            margin-left: ( 187.5 / @rootSize );
+            margin-top: ( 100 / @rootSize );
+            color: #fff;
+            opacity: 0.8;
+        }
+
+        .txt {
+            padding-left: ( 15 / @rootSize );
+            padding-top: ( 10 / @rootSize );
+            padding-bottom: ( 10 / @rootSize );
+            background-color: #fff;
+            h4 {
+                color: #3c3c3c;
+                font-size: ( 15 / @rootSize );
+            }
+            h5 {
+                margin-top: ( 10 / @rootSize );
+                font-size: ( 11 / @rootSize );
+                color: #b4b4b4;
+            }
+            h5 i {
+                color: red;
+            }
+        }
+    }
+
+}
+
+
+
+// 底部工具栏
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: ( 50 / @rootSize );
+    width: 100%;
+    background-color: #feca49;
+    display: flex;
+    justify-content: space-around;
+    a {
+        text-align: center;
+        font-size: ( 15 / @rootSize );
+        color: #d78b09;
+        .iconfont {
+            font-size: ( 24 / @rootSize );
+        }
+        &.current {
+            color: #fff;
+        }
+    }
+}
